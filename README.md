@@ -30,9 +30,8 @@ This will pull the actual CSV files instead of the LFS pointer files.
 ## Project Structure
 
 ```
-01_data/               Dataset and drift CSVs (tracked via Git LFS)
 02_src/                Notebooks and source code
-03_dashboard/          Streamlit app
+StreamLit/             Streamlit app
 other/                 Misc files
 requirements.txt
 .gitignore
