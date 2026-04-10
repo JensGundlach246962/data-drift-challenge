@@ -39,10 +39,10 @@ requirements.txt
 README.md
 ```
 
-The following files are available in `01_data/` after cloning:
+The following files are available in `StreamLit/data/` after cloning:
 
 ```
-01_data/
+StreamLit/data/
   creditcard.csv
   drift_1.csv
   drift_2.csv
@@ -57,7 +57,7 @@ The following files are available in `01_data/` after cloning:
 
 ```
 conda activate data_drift
-streamlit run 03_dashboard/app.py
+streamlit run StreamLit/app.py
 ```
 
 The dashboard has four pages:
