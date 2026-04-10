@@ -16,14 +16,21 @@ pip install -r requirements.txt
 
 ## Dataset
 
-Download from Kaggle: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+The dataset contains 284,807 transactions with 30 features (V1–V28 are PCA-transformed, plus Amount and Time) and a binary Class label. It is tracked in this repository via Git LFS — no manual download required.
 
-Place `creditcard.csv` in the `01_data/` folder (not tracked by git). The dataset contains 284,807 transactions with 30 features (V1–V28 are PCA-transformed, plus Amount and Time) and a binary Class label.
+If you do not have Git LFS installed, install it first:
+
+```
+git lfs install
+git pull
+```
+
+This will pull the actual CSV files instead of the LFS pointer files.
 
 ## Project Structure
 
 ```
-01_data/               Dataset and drift CSVs (gitignored)
+01_data/               Dataset and drift CSVs (tracked via Git LFS)
 02_src/                Notebooks and source code
 03_dashboard/          Streamlit app
 other/                 Misc files
@@ -32,7 +39,7 @@ requirements.txt
 README.md
 ```
 
-Place the following files in `01_data/` before running the dashboard:
+The following files are available in `01_data/` after cloning:
 
 ```
 01_data/
